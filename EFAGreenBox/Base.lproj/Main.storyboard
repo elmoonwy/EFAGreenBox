@@ -428,7 +428,7 @@
                                 <rect key="frame" x="0.0" y="-6" width="562" height="695"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" minimumFontSize="17" id="HNs-UH-at7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" id="HNs-UH-at7">
                                 <rect key="frame" x="52" y="99" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="sdggdfgfdgfdgd"/>
@@ -479,13 +479,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="full_name_textbox" destination="HNs-UH-at7" id="lcM-xb-kf4"/>
-                        <outlet property="new_pass_textbox" destination="6L8-HI-duU" id="12q-lN-Blq"/>
-                        <outlet property="new_password_textbox" destination="6L8-HI-duU" id="UOB-t2-MnX"/>
-                        <outlet property="newpassword_textbox" destination="6L8-HI-duU" id="QKe-Of-8cY"/>
-                        <outlet property="old_password_text_box" destination="BBC-mY-Ovc" id="ULU-66-Nlc"/>
-                        <outlet property="old_password_textbox" destination="BBC-mY-Ovc" id="p4s-iK-ikU"/>
-                        <outlet property="password_confirm_textbox" destination="5tW-tX-mDC" id="Dto-12-Jzc"/>
+                        <outlet property="email_textbox" destination="HNs-UH-at7" id="xnf-AW-TgF"/>
+                        <outlet property="newpassword_textbox" destination="6L8-HI-duU" id="c2Y-SM-iBS"/>
+                        <outlet property="old_password_textbox" destination="BBC-mY-Ovc" id="tU4-ga-kqD"/>
+                        <outlet property="password_confirm_textbox" destination="5tW-tX-mDC" id="rM4-CI-e3S"/>
                         <outlet property="update_btn" destination="IOW-Cu-vrB" id="JQh-eb-Zyc"/>
                     </connections>
                 </viewController>

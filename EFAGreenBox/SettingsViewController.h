@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Patient.h"
 
 @interface SettingsViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextField *full_name_textbox;
+@property (strong, nonatomic) IBOutlet UITextField *email_textbox;
 @property (strong, nonatomic) IBOutlet UITextField *old_password_textbox;
 @property (strong, nonatomic) IBOutlet UITextField *newpassword_textbox;
 @property (strong, nonatomic) IBOutlet UITextField *password_confirm_textbox;

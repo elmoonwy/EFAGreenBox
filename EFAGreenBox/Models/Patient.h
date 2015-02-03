@@ -29,4 +29,5 @@
 +(NSString *)pushRx: (NSString*)rx_id;
 +(void)generateNewOrder:(NSString*)pharmacy_npi withRxStr:(NSString*)Rx;
 +(NSArray*)getMyProfile:(NSString*)user_id;
++(NSString*)updatePassword:(NSString*)new_password withEmail:(NSString*)email throughUserID:(NSString*)user_id;
 @end

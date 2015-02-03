@@ -95,4 +95,9 @@
     NSArray *arr=[[NSArray alloc] initWithArray:[dic allValues]];
     return arr;
 }
+
++(NSString*)updatePassword:(NSString*)new_password withEmail:(NSString*)email throughUserID:(NSString*)user_id{
+    NSString *param=[[NSString alloc] initWithFormat:@"new_password=%@&email=%@&user_id=%@", new_password, email, user_id];
+    return [Post postRequest:[SERVICE_URL stringByAppendingString:@"users/update_password"] withParams:param];
+}
 @end
