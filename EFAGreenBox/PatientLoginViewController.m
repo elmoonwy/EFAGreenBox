@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    patient_id=nil;
+    patient_name=nil;
+    patient_user_id=nil;
+    user_id=nil;
+    provider_npi=nil;
+    providers_user_ids=nil;
 }
 
 - (void)didReceiveMemoryWarning {

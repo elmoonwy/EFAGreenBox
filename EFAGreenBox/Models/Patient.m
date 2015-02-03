@@ -87,4 +87,12 @@
     NSString *res=[Post postRequest:[SERVICE_URL stringByAppendingString:@"pharmacists/create_order"] withParams:param_rx];
     NSLog(@"the result must be: %@", res);
 }
+
++(NSArray*)getMyProfile:(NSString*)user_id{
+    NSString *param=[[NSString alloc] initWithFormat:@"user_id=%@", user_id];
+    NSString *res=[Get getRequest:[SERVICE_URL stringByAppendingString:@"users/get_my_profile.json?"] withParams: param];
+    NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:res] options:NSJSONReadingMutableContainers error:nil];
+    NSArray *arr=[[NSArray alloc] initWithArray:[dic allValues]];
+    return arr;
+}
 @end

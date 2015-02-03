@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
+#import "PatientLoginViewController.h"
 
 @interface DEMOLeftMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, RESideMenuDelegate>
 

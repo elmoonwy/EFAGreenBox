@@ -46,7 +46,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
@@ -59,6 +59,18 @@
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"thirdViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
+            break;
+        case 3:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PrescriptionsListViewController"]]
+                                                         animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+        case 4:
+//            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PatientLoginViewController"]]
+//                                                         animated:YES];
+//            [self.sideMenuViewController hideMenuViewController];
+            [self displayLoginViewController];
+            break;
         default:
             break;
     }
@@ -97,12 +109,17 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"Profile", @"Report", @"Prescriptions", @"Settings", @"Log Out"];
-    NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings", @"IconEmpty"];
+    NSArray *titles = @[@"Profile", @"Report", @"My Drug List", @"Prescriptions", @"Log Out"];
+    NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconHome", @"IconEmpty"];
     cell.textLabel.text = titles[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     
     return cell;
+}
+
+-(void)displayLoginViewController{
+    PatientLoginViewController *view=[self.storyboard instantiateViewControllerWithIdentifier:@"PatientLoginViewController"];
+    [self presentViewController:view animated:YES completion:nil];
 }
 
 @end

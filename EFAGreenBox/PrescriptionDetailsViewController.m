@@ -55,6 +55,7 @@
 - (IBAction)back_btn_action:(id)sender {
     PrescriptionsListViewController *view=[self.storyboard instantiateViewControllerWithIdentifier:@"PrescriptionsListViewController"];
     [self presentViewController:view animated:YES completion:nil];
+    NSLog(@"wo teme xianghuiqu!");
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

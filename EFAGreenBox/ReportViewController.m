@@ -81,7 +81,7 @@
     self._pickerData=answer;
     //replace the picker
     [self.picker removeFromSuperview];
-    self.picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 200, 320, 200)];
+    self.picker = [[UIPickerView alloc] initWithFrame:CGRectMake(-10, 300, 320, 200)];
     self.picker.delegate = self;
     self.picker.showsSelectionIndicator = YES;
     [self.view addSubview: self.picker];
@@ -100,13 +100,13 @@
 }
 - (IBAction)report_action:(id)sender {
     NSString *res=[self._pickerData objectAtIndex:[self.picker selectedRowInComponent:0]];
-//    NSString *request_res=[Patient doReport:patient_id withDrugID:[self selected_drug_id] withSideEffects:res];
-//    NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:request_res] options:NSJSONReadingMutableContainers error:nil];
-//    if([[dic objectForKey:@"status"] intValue]==200){
-//        UIAlertView *messageAlert = [[UIAlertView alloc]
-//                                     initWithTitle:@"Report" message: @"Report success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        [messageAlert show];
-//    }
+    NSString *request_res=[Patient doReport:patient_id withDrugID:[self selected_drug_id] withSideEffects:res];
+    NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:[JSONHandler StringToData:request_res] options:NSJSONReadingMutableContainers error:nil];
+    if([[dic objectForKey:@"status"] intValue]==200){
+        UIAlertView *messageAlert = [[UIAlertView alloc]
+                                     initWithTitle:@"Report" message: @"Report success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [messageAlert show];
+    }
     
     //send websocket messages to my providers
     for(id provider_id in providers_user_ids){

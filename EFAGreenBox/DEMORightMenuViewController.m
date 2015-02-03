@@ -45,14 +45,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SettingsViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"]]
-                                                         animated:YES];
-            [self.sideMenuViewController hideMenuViewController];
+//            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"]]
+//                                                         animated:YES];
+//            [self.sideMenuViewController hideMenuViewController];
             break;
         default:
             break;
@@ -74,7 +74,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 2;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -92,11 +92,16 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"Test 1", @"Test 2"];
+    //NSArray *titles = @[@"Buy Drugs", @"My Report History"];
+    NSArray *titles = @[@"Settings"];
+    //NSArray *images = @[@"IconSettings", @"IconEmpty"];
     cell.textLabel.text = titles[indexPath.row];
+    //cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     cell.textLabel.textAlignment = NSTextAlignmentRight;
     
     return cell;
 }
+
+
 
 @end

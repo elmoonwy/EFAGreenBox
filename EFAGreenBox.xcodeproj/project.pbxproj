@@ -63,6 +63,8 @@
 		9A3144CD1A801C9900E62E34 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A3144C21A801C9900E62E34 /* qrspec.c */; };
 		9A3144CE1A801C9900E62E34 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A3144C41A801C9900E62E34 /* rscode.c */; };
 		9A3144CF1A801C9900E62E34 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A3144C61A801C9900E62E34 /* split.c */; };
+		9AA0AB901A813554006849BA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0AB8F1A813554006849BA /* ProfileViewController.m */; };
+		9AA0AB931A81693A006849BA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0AB921A81693A006849BA /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,10 @@
 		9A3144C51A801C9900E62E34 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
 		9A3144C61A801C9900E62E34 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
 		9A3144C71A801C9900E62E34 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		9AA0AB8E1A813554006849BA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		9AA0AB8F1A813554006849BA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		9AA0AB911A81693A006849BA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9AA0AB921A81693A006849BA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		DD0DCB829F871E21EC39B0EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -335,6 +341,10 @@
 				9A31441C1A7FE22A00E62E34 /* DEMOSecondViewController.m */,
 				9A31442B1A80074E00E62E34 /* PatientLoginViewController.h */,
 				9A31442C1A80074E00E62E34 /* PatientLoginViewController.m */,
+				9AA0AB8E1A813554006849BA /* ProfileViewController.h */,
+				9AA0AB8F1A813554006849BA /* ProfileViewController.m */,
+				9AA0AB911A81693A006849BA /* SettingsViewController.h */,
+				9AA0AB921A81693A006849BA /* SettingsViewController.m */,
 			);
 			name = PatientViewControllers;
 			sourceTree = "<group>";
@@ -615,12 +625,14 @@
 				9A3144791A8012EE00E62E34 /* Post.m in Sources */,
 				9A31448D1A80149000E62E34 /* PrescriptionDetailsViewController.m in Sources */,
 				9A3144CD1A801C9900E62E34 /* qrspec.c in Sources */,
+				9AA0AB901A813554006849BA /* ProfileViewController.m in Sources */,
 				9A3144211A7FE22A00E62E34 /* DEMOSecondViewController.m in Sources */,
 				9A3144201A7FE22A00E62E34 /* DEMORootViewController.m in Sources */,
 				9A3144821A80137800E62E34 /* Patient.m in Sources */,
 				9A31442D1A80074E00E62E34 /* PatientLoginViewController.m in Sources */,
 				9A31448C1A80149000E62E34 /* DrugsListViewController.m in Sources */,
 				9A3144CC1A801C9900E62E34 /* qrinput.c in Sources */,
+				9AA0AB931A81693A006849BA /* SettingsViewController.m in Sources */,
 				9A31441F1A7FE22A00E62E34 /* DEMORightMenuViewController.m in Sources */,
 				9A3144C91A801C9900E62E34 /* mask.c in Sources */,
 			);

@@ -11,6 +11,5 @@
 
 @interface DEMOSecondViewController : UIViewController
 
-- (IBAction)pushViewController:(id)sender;
 
 @end

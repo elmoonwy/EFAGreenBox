@@ -28,4 +28,5 @@
 +(NSString *)getDrugsInPrescription: (NSString*)patient_id withPrescriptionId:(NSString*)prescription_id;
 +(NSString *)pushRx: (NSString*)rx_id;
 +(void)generateNewOrder:(NSString*)pharmacy_npi withRxStr:(NSString*)Rx;
++(NSArray*)getMyProfile:(NSString*)user_id;
 @end
